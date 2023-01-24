@@ -1,0 +1,14 @@
+function accum(s) {
+	let string = ''
+  for(let i = 0; i < s.length; i++){
+    let vari = s[i].toLowerCase()
+
+    if(i != 0){
+     string += '-'
+    }
+    let varTwo = vari.repeat(i+1)
+    string += varTwo.charAt(0).toUpperCase() + varTwo.slice(1)
+    
+  }
+  return string
+}

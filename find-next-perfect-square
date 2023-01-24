@@ -1,0 +1,11 @@
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  if(Math.ceil(Math.sqrt(sq)) === Math.floor(Math.sqrt(sq))){
+     let sum = Math.sqrt(sq)
+     let sumTwo = sum + 1
+     let nextSquare = Math.pow(sumTwo,2)
+       return nextSquare
+  }else{
+      return -1;
+  }
+}

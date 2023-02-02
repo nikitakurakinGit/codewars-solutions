@@ -1,0 +1,4 @@
+function alphabetPosition(text) {
+ let ans = text.toLowerCase().split('').filter(a => a >= 'a' && a <= 'z').map(a => a.charCodeAt(0) - 'a'.charCodeAt(0) + 1).join(' ')
+  return ans;
+}

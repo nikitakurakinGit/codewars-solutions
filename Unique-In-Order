@@ -1,0 +1,9 @@
+function uniqueInOrder(it){
+  //your code here - remember iterable can be a string or an array
+  let answer = []
+ for(let i = 0; i< it.length; i++){
+   if(it[i] != it[i+1]){
+     answer.push(it[i])
+   }
+ }return answer
+}

@@ -1,0 +1,7 @@
+t reverseSeq = n => {
+  let seq = []
+  for (let i = n; i > 0; i--) {
+    seq.push(i)
+  }
+  return seq;
+} 

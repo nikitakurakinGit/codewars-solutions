@@ -1,0 +1,15 @@
+
+function findAverage(array) {
+ if(array.length === 0){
+   return 0
+ } else {
+  
+  let length = array.length
+  let average = 0
+  array.forEach(num => {
+    average += num
+  })
+  return average/length;
+}}
+
+

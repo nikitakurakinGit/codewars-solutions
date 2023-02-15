@@ -1,0 +1,7 @@
+function invert(array) {
+  let newArr = []
+   array.forEach(num =>{
+     newArr.push(num * -1)
+   })
+  return newArr
+}

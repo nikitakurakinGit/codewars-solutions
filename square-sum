@@ -1,0 +1,12 @@
+
+n squareSum(numbers){
+  if (numbers.length === 0) {
+    return 0
+  } else {
+    let squareSum = 0
+    for (let i = 0; i < numbers.length; i++) {
+      squareSum += Math.pow(numbers[i],2)
+    }
+    return squareSum
+  }
+}

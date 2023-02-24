@@ -1,0 +1,14 @@
+function findOdd(A) {
+  const map = new Map()
+  for (let i = 0; i < A.length; i++) {
+    const get = map.get(A[i]) || 0
+    map.set(A[i],get+1)
+  }
+  let ans 
+  map.forEach((value, key) => {
+    if (value%2 != 0) {
+      ans = key
+    }
+  })
+  return ans
+}

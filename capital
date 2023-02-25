@@ -1,0 +1,7 @@
+String.prototype.toJadenCase = function () {
+  const split = this.toLowerCase().split(' ')
+    for (let i = 0; i < split.length; i++) {
+     split[i] = split[i].charAt(0).toUpperCase() + split[i].substring(1)
+    }
+  return split.join(' ')
+};

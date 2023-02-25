@@ -1,0 +1,16 @@
+
+function DNAtoRNA(dna) {
+  let ans = ''
+ for (let i = 0; i < dna.length; i++) {
+   if (dna[i] === 'T') {
+      ans += dna[i].replace('T', 'U')
+   } else {
+     ans += dna[i]
+   }
+ }
+  return ans
+}
+
+function DNAtoRNA(dna) {
+  return dna.replaceAll('T', 'U')
+}

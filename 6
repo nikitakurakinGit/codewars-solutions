@@ -1,0 +1,5 @@
+function arrayDiff(a, b) {
+  const arrA = a 
+  const remove = new Set(b)
+  return arrA.filter(num => !remove.has(num))
+}

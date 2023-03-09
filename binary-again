@@ -1,0 +1,6 @@
+
+n addBinary(a,b) {
+  let sum =  a+b
+  let ans = sum.toString(2)
+  return ans
+}

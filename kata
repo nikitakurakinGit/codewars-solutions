@@ -1,0 +1,7 @@
+function stairsIn20(s){
+  let ans = 0
+  for (let i = 0; i < s.length; i++) {
+   ans += s[i].reduce((a,c) => a + c)
+ }
+  return ans*20
+}
